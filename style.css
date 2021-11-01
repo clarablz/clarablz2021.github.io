@@ -1,0 +1,752 @@
+
+@font-face {
+      font-family: "Voyage-Regular";
+      font-display: swap;
+      src: url("/fonts/Voyage-Regular.ttf");
+      src: url("/fonts/Voyage-Regular?#iefix") format("embedded-opentype"), url("/fonts/Voyage-Regular.woff") format("woff") url("/fonts/Voyage-Regular.woff2") format("woff2");
+      font-style: normal;
+  }
+  
+@font-face {
+      font-family: "Voyage-Bold";
+      font-display: block;
+      src: url("/fonts/Voyage-Bold.ttf");
+      src: url("/fonts/Voyage-Bold?#iefix") format("embedded-opentype"), url("/fonts/Voyage-Bold.woff") format("woff") url("/fonts/Voyage-Bold.woff2") format("woff2");
+      font-style: normal;
+  }
+
+
+body{
+      background-color: #FDF8F1;
+      overflow-x: hidden;
+}
+
+*{
+      margin: 0;
+      padding: 0;
+}
+
+
+#home{
+      height: 100vh;
+}
+
+.main_gradient{
+      height: 140vh;
+      position: absolute;
+      top: -20vh;
+      right:-10vw;
+      z-index: -1;
+}
+
+.title{
+      padding:4vw;
+      font-family: 'Voyage-Regular';
+      font-weight: normal;
+      font-size: 3vw;
+      line-height: 80%;
+      cursor: pointer;
+      
+}
+.title_link{
+      color: black;
+      text-decoration: none;
+      
+}
+#navigation{
+      position: absolute;
+      top:7.1vw;
+      right:3vw;
+      z-index: 1;
+}
+
+#navigation li {
+      display: inline;
+      padding : 5vw;
+      font-family: 'Poppins';
+      font-weight: 300;
+      text-decoration: none;
+      outline-style: none;
+      font-size: 1.5vw;
+      text-transform: uppercase;
+}
+
+#navigation a{
+      text-decoration: none;
+      color: black;
+}
+
+.title_div{
+      width: 65vw;
+      position: relative;
+      top: 5vh;
+      left: 4vw;
+}
+
+.main_title_1{
+      font-family: 'Voyage-Regular';
+      font-weight: normal;
+      font-size: 9vw;
+      line-height: 90%;
+      cursor: default;
+}
+
+#bonjour{
+      position: relative;
+      top:5vh;
+      font-size: 1000%;
+}
+
+
+
+#my_name{
+      font-size: 9vh;
+}
+
+.contact{
+      display: grid; 
+      grid-template-columns: 0.1fr 2fr; 
+      grid-template-rows: 1fr 1fr 1fr; 
+      gap: 3px 7px;
+
+      position: absolute;
+      bottom: 15vh;
+      left:4vw;
+}
+
+.contact_icon{
+      height: 30px;
+      justify-self: center;
+}
+
+.contact h3{
+      justify-self: left;
+      align-self: center;
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size:1.8vh;
+      
+}
+
+.contact a{
+      text-decoration: none;
+      color: black;
+}
+
+.circle_portfolio{
+      height: 10vw;
+      position:absolute;
+      bottom: 10vh;
+      right: 8vw;
+      transform-origin: 50% 50%;
+}
+
+.circle_portfolio:hover{
+      animation-play-state: paused;
+}
+ 
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.ease{
+      opacity: 0;
+      transition: opacity 2s;
+}
+
+.ease-scroll{
+      opacity: 1;
+}
+
+.ease_arrow{
+      opacity: 0;
+      
+      transition: opacity 5s transform 1s;
+}
+
+.ease_scroll_arrow{
+      opacity:1;
+      transform: rotate(30deg);
+      
+}
+
+
+
+.div_circle{
+      position: relative;
+      top: 30vh;
+}
+ 
+.rotating {
+    -webkit-animation: rotating 10s linear infinite;
+}
+
+#about{
+      background-color: #78BCFF;
+      height: 225vh;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.about_div{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 0.5fr 1fr;
+      grid-column-gap: 44px;
+      grid-row-gap: 10px;
+      margin-left: 5vw;
+      margin-top: 20vh;
+}
+
+.subtitle{
+      color: white;
+      font-family: 'Voyage-Regular';
+      font-weight: normal;
+      font-size: 7vw;
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.164);
+}
+
+#about_me{
+      grid-column-start: 1;
+      grid-column-end: 1;
+      justify-self: end;
+      align-self: end;
+      
+}
+
+.about_paragraph{
+      grid-column-start: 1;
+      grid-column-end: 1;
+      justify-self: end;
+      color: white;
+      text-align: right;
+      font-family: 'Poppins';
+      font-weight: 400;
+      align-self: start;
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.164);
+}
+
+.div_3D_illus{
+      position: relative;
+      right:5vw;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+}
+
+.illustration_3D{
+      height: 80vh;      
+      align-self: center;
+      justify-self: start;
+
+}
+
+.skills_div{
+      position:relative;
+      top:10vh;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 44px;
+      grid-row-gap: 10px;
+      margin-left: 5vw;
+      width: 60vw;
+}
+
+.rectangles{
+      grid-column: 1;
+      grid-row: 2;
+      align-self: center;
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+#skills{
+      align-self: end;
+      justify-self: center;
+      cursor: default;
+}
+
+.skills_rectangle{
+      background-color: white;
+      padding:10px;
+      margin: 10px;
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+      border-radius: 30px;
+      font-family: 'Poppins';
+      color:#78BCFF;
+      cursor: default;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.06) inset;
+      
+}
+
+.competences{
+      grid-column-start: 2;
+      grid-row-start: 2;
+      align-self: center;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 38px;
+      grid-row-gap: 10px;
+      width:90%;
+}
+
+.logi{
+      justify-self: end;
+      font-family: 'Poppins';
+      font-weight: 400;
+      color:white;
+      font-size: 1.3vw;
+      cursor: default;
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.164);
+}
+
+#photoshop{
+      grid-column: 1;
+      grid-row: 1;
+}
+#dot_ps{
+      grid-row: 1;
+}
+
+#lightroom{
+      grid-column: 1;
+      grid-row: 2;
+}
+#dot_lr{
+      grid-row: 2;
+}
+
+#illustrator{
+      grid-column: 1;
+      grid-row: 3;
+}
+#dot_ai{
+      grid-row: 3;
+}
+
+#adobexd{
+      grid-column: 1;
+      grid-row: 4;
+}
+#dot_xd{
+      grid-row: 4;
+}
+
+#htmlcss{
+      grid-column: 1;
+      grid-row: 5;
+}
+#dot_html{
+      grid-row: 5;
+}
+
+#javascript{
+      grid-column: 1;
+      grid-row: 6;
+}
+#dot_js{
+      grid-row: 6;
+}
+
+.dot_container{
+      grid-column: 2;
+      display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+
+.dot{
+      height:22px;
+      width:22px;
+      border-radius: 100%;
+}
+
+.fill{
+      background-color: white;
+}
+
+.empty{
+      outline: solid 1.5px white;
+      outline-offset: -1.5px;
+}
+
+.cloud_img{
+      height:100px;
+      position:relative;
+      bottom: 40vh;
+      right:40vw;
+}
+
+#feature_project{
+      background-color: #FDF8F1;
+      height: 250vh;
+      border-radius: 100px;
+      position: relative;
+      bottom: 20vh;
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	
+	align-items: center;
+	align-content: stretch;
+}
+
+
+#my_latest_project{
+      color: black;
+      text-shadow: none;
+      padding-top: 20vh;
+}
+
+.fields{
+      font-family: "Poppins";
+      font-weight: 200;
+      font-size: 1.5vw;
+      padding-bottom: 20px;
+      line-height: 50%;
+      align-self: start;
+      z-index: 2;
+
+}
+#cote_cosme_fields{
+      line-height: 150%;
+}
+
+
+.div_pictures{
+      padding-top: 15vh;
+}
+.arrow{
+      height: 10vh;
+      transform: rotate(70deg);
+      padding-top: 5vh;
+}
+
+.arrow_left{
+      height: 10vh;
+      transform: rotate(-100deg);
+      padding-top: 5vh;
+      position:relative;
+      top: 30px;
+      left: 50px;
+
+}
+
+.div_arrow{
+      position: absolute;
+      top: 70vh;
+      left: 80vw;
+}
+.div_arrow_left{
+      position: absolute;
+      top: 200vh;
+      left: 20vw;
+}
+
+
+
+.domain{
+      color:black;
+      text-shadow: none;
+      font-size: 2vw;
+}
+
+
+
+.cote_cosme_card{
+      height:50vh;
+      padding-bottom: 10vh;
+}
+
+
+
+#cote_cosme_description{
+      text-align: center;
+      width:30vw;
+}
+
+.gradient_cote_cosme{
+      height: 100vh;
+      opacity: 0.75;
+      position: inherit;
+      right: 8vw;
+}
+
+.tube_corps{
+      height: 80vh;
+      position:inherit;
+      bottom: 80vh;
+
+}
+
+
+
+.div_pictures:hover  #tube{
+      transform: rotate(-25deg) translate(120px,0px);
+}
+
+.div_pictures:hover #alix{
+      transform: rotate(5deg) translate(0px,20px);
+}
+
+.div_pictures:hover #serum{
+      transform: rotate(20deg) translate(-90px,0px);
+}
+
+.div_pictures:hover ~ #cote_cosme{
+      transform: scale(1.2);
+}
+
+
+#tube{
+      z-index: -1;
+      transform: rotate(-15deg) translate(150px,0px);
+      transition: all 1s;
+}
+
+#alix{
+      z-index: 1;
+      position: relative;
+      top: 30px;
+      transform: rotate(5deg);
+      transition: all 1s;
+}
+
+#serum{
+      z-index: -1;
+      position: inherit;
+      
+      transform: rotate(10deg) translate(-100px,0px);
+      transition: all 1s;
+}
+
+
+
+#design{
+      background-color: #FFD6E2;
+      height: 320vh;
+      border-radius: 100px;
+      position: relative;
+      bottom: 20vh;
+      
+}
+
+.my_work_div{
+      padding-top: 15vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 20vh repeat(3, 80vh);
+      grid-column-gap: 30px;
+      grid-row-gap: 0px;
+      z-index: 2;
+}
+
+#my_work{
+      color: black;
+      text-shadow: none;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      justify-self: center;
+}
+
+.image_project{
+      justify-self: center;
+      align-self: center;
+      width: 45vw;
+      z-index: 2;
+}
+
+.project_title{
+      font-family: "Voyage-Regular";
+      font-weight: normal;
+      font-size: 5vw;
+      align-self: end;
+      z-index: 2;
+      
+}
+
+#cote_cosme{
+      align-self: center;
+      transition: all 1s;
+}
+
+#cote_cosme_fields{
+      align-self: center;
+}
+
+.project_description{
+      font-family: 'Poppins';
+      font-weight: 300;
+      font-size: 110%;
+      width: 30vw;
+      padding-top: 20px;
+      z-index: 2;
+}
+
+.work_presentation{
+      align-self: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.25fr 0.5fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      
+}
+
+.presentation_left{
+      justify-self: end;
+      z-index: 2;
+      
+}
+
+.presentation_right{
+      justify-self: start;
+      z-index: 2;
+}
+
+#musimac_mockup{
+      justify-self: start;
+}
+
+#musimac_title{
+      justify-self: end;
+      z-index: 2;
+      
+}
+
+#musimac_description{
+      justify-self: end;
+      text-align: right;
+      z-index: 2;
+}
+
+#musimac_field{
+      justify-self: end;
+      z-index: 2;
+}
+
+#arg_mockup{
+      width:40vw;
+}
+
+.purple_gradient{
+      z-index: 0;
+      position: inherit;
+      bottom: 80vh;
+      left:15vw;
+      opacity: 0.6;
+}
+
+.purple_yellow_gradient{
+      opacity:0.4;
+      z-index: 0;
+      position: inherit;
+      bottom: 245vh;
+      left: 20vw;
+      width: 60%;
+}
+.pink_gradient{
+      opacity:0.8;
+      z-index: 0;
+      position: inherit;
+      bottom: 400vh;
+      left: 20vw;
+      width: 60%;
+}
+
+#photography{
+      height: 300vh;
+      background-color: #FDF8F1;
+      border-radius: 100px;
+      position: relative;
+      bottom: 50vh;
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	
+	align-items: center;
+	align-content: stretch;
+      
+}
+
+#photography_title{
+      color: black;
+      text-shadow: none;
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+}
+
+.gallery {
+      display: flex;
+      padding: 2px;
+      transition: 0.3s;
+    }
+    
+    .gallery__column {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+    .gallery__link {
+      margin: 10px;
+      overflow: hidden;
+    }
+    
+    .gallery__link:hover .gallery__caption {
+      opacity: 1;
+    }
+    .gallery__thumb {
+      position: relative;
+    }
+    .gallery__image {
+      display: block;
+      width: 100%;
+      transition: 0.3s;
+    }
+    .gallery__image:hover {
+      transform: scale(1.1);
+    }
+    .gallery__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 25px 15px 15px;
+      width: 100%;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      color: white;
+      opacity: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+      transition: 0.3s;
+    }
+    .lerp-wrap span {
+      display: inline-block;
+      font-size: clamp(32px, 5vw, 8vw);
+    }
+    
