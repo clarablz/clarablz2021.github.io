@@ -35,6 +35,8 @@ body{
       height: 100vh;
 }
 
+
+
 .main_gradient{
       height: 140vh;
       position: absolute;
@@ -140,7 +142,7 @@ body{
 .circle_portfolio{
       height: 10vw;
       position:absolute;
-      bottom: 10vh;
+      bottom: 30vh;
       right: 8vw;
       transform-origin: 50% 50%;
 }

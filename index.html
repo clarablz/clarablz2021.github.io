@@ -15,8 +15,8 @@
 
 </head>
 
-<body>
-      <div data-scroll-container id="container">
+<body data-scroll-container>
+      
 
       <section id="home" >
             <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-position="top">
@@ -384,16 +384,13 @@
             </div>
       </section>
 
-</div>
+
       <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>      
       <script src="locomotive-scroll.min.js"></script>
 
 
       <script>
-            const sectionPhoto = document.querySelector('#photography')
-            imagesLoaded(sectionPhoto, { background: true }, function () {
-                  scroll.update();
-            });
+            
             const scroll = new LocomotiveScroll({
                   el: document.querySelector('[data-scroll-container]'),
                   smooth: true,
