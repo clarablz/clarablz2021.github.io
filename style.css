@@ -410,7 +410,7 @@ body{
 
 #feature_project{
       background-color: #FDF8F1;
-      height: 250vh;
+      height: 200vh;
       border-radius: 100px;
       position: relative;
       bottom: 20vh;
@@ -441,11 +441,15 @@ body{
 }
 #cote_cosme_fields{
       line-height: 150%;
+      position: relative;
+      bottom: 40px;
+      
 }
 
 
 .div_pictures{
-      padding-top: 15vh;
+      padding-top: 1vh;
+      z-index: 2;
 }
 .arrow{
       height: 10vh;
@@ -465,12 +469,12 @@ body{
 
 .div_arrow{
       position: absolute;
-      top: 70vh;
+      top: 40vh;
       left: 80vw;
 }
 .div_arrow_left{
       position: absolute;
-      top: 200vh;
+      top: 130vh;
       left: 20vw;
 }
 
@@ -485,8 +489,8 @@ body{
 
 
 .cote_cosme_card{
-      height:50vh;
-      padding-bottom: 10vh;
+      height:40vh;
+      padding-bottom: 5vh;
 }
 
 
@@ -497,16 +501,22 @@ body{
 }
 
 .gradient_cote_cosme{
-      height: 100vh;
+      height: 80vh;
       opacity: 0.75;
       position: inherit;
       right: 8vw;
 }
 
 .tube_corps{
-      height: 80vh;
+      height: 60vh;
       position:inherit;
-      bottom: 80vh;
+      bottom: 60vh;
+      transition: all 1s;
+
+}
+
+.tube_corps:hover{
+      transform: scale(1.2);
 
 }
 
